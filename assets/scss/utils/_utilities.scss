@@ -1,0 +1,112 @@
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded-top-start": (
+      property: border-top-left-radius,
+      class: rounded-top-start,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-xxl),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-top-end": (
+      property: border-top-right-radius,
+      class: rounded-top-end,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-xxl),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-bottom-start": (
+      property: border-bottom-left-radius,
+      class: rounded-bottom-start,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-xxl),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-bottom-end": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-end,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-xxl),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "font-weight": (
+      responsive: true,
+      property: font-weight,
+      class: fw,
+      values: (
+        lighter: $font-weight-lighter,
+        light: $font-weight-light,    //300
+        normal: $font-weight-normal,  //400
+        medium: $font-weight-medium,  //500
+        semibold: $font-weight-semibold, //600
+        bold: $font-weight-bold,      //700
+        extrabold : 800,
+        heavy: 900,
+        bolder: $font-weight-bolder,
+      )
+    ),
+    "font-size": (
+      responsive: true,
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+    ),
+    "letter-spacing": (
+      responsive: true,
+      property: letter-spacing,
+      class: ls,
+      values: (
+        null: .1em,
+        1: .05em,
+        2: .1em,
+        none: 0,
+      )
+    ),
+    "text-indent": (
+      responsive: true,
+      property: text-indent,
+      class: ti,
+      values: (
+        null: .1em,
+        1: .05em,
+        2: .1em,
+        none: 0,
+      )
+    ),
+  )
+);

@@ -1,0 +1,149 @@
+.banner {
+  height: 551px;
+  @media (min-width:992px) {
+    height: 621px;
+  }
+}
+
+.mask {
+  position: relative;
+  &:hover::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #{$gray-600};
+    opacity: 0.4;
+    border-top-left-radius: $border-radius-lg;
+    border-bottom-right-radius: $border-radius-lg;
+  }
+}
+
+.specialOffer {
+  overflow: hidden;
+  h4 {
+    color: #{$accent-2};
+    @media (min-width: 992px) {
+      color: #{$gray-4};
+    }
+  }
+  &-bg {
+    &::before {
+      position: absolute;
+      content: "";
+      right: -48px;
+      bottom: -8px;
+      width: 160px;
+      height: 104px;
+      background-color: #000;
+      background-image: url(../../images/bg-2-sm.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 100;   
+      @media (min-width: 992px) {
+        right: -32px;
+        width: 300px;
+        height: 196px;
+        background-image: url(../../images/bg-2.png);
+      }
+    }
+    &::after {
+      display: none;
+      @media (min-width: 992px) {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 24px;
+        bottom: -8px;
+        width: 217px;
+        height: 81px;
+        background-color: #fff;
+        background-image: url(../../images/bg-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+
+.swiper-pagination::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #{$gray-4};
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.enjorLifeTitle {
+  font-size: 40px;
+  line-height: 1.5;
+  @media (min-width:767px) {
+    font-size: 52px;
+    line-height: 1.44;
+  }
+}
+
+.nav-pills .nav-link {
+  &.watchingNavTab {
+    color: #{$gray-6};
+    &:hover {
+      color: #{$accent-2};
+      background: #FFF;
+    }
+    &.active {
+      color: #{$gray-6};
+      background-color: #{$accent-1};
+    }
+  }
+}
+
+.watching{
+  .tab-content {
+      overflow-x: scroll;
+      @media (min-width: 1200px) {
+          overflow-x: visible;
+      }
+  }
+  .tab-pane {
+    width: 324px;
+    background-color: #fff;
+    // border: 1px solid red;
+  
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+    &.fade {
+      display: block;
+      opacity: 1;
+      @media (min-width: 1200px) {
+        display: none;
+        opacity: 0;
+      }
+    }
+    &.active , &.fade.active {
+      display: block;
+      opacity: 1;
+    }
+  }
+  .tab-content-img-group {
+      @media (min-width: 1200px) {    
+          height: 232px;
+      }
+  }
+  .tab-content-footer {
+      ul {
+        gap: 10px;
+        @media (min-width: 1200px) {
+          gap: 16px;
+        }  
+      }
+  }
+}

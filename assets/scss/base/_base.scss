@@ -1,0 +1,73 @@
+//Newsreader
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+// Noto Serif Traditional Chinese
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+
+body {
+    font-family:  "Noto Serif TC", "Newsreader" , serif;
+    background-color: #FFFDF5;
+    color: #{$gray-5};
+    line-height: 1.2;
+}
+
+.eng {
+    font-family: "Newsreader" , serif;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
+
+.btn-accent-2 {
+    --bs-btn-color: #FFF; // #000;
+    --bs-btn-bg: #569573;
+    --bs-btn-border-color: #569573;
+    --bs-btn-hover-color: #FFF; // #000;
+    --bs-btn-hover-bg: #{$accent-3}; // #6fa588;
+    --bs-btn-hover-border-color: #{$accent-3}; // #67a081;
+    --bs-btn-focus-shadow-rgb: 73, 127, 98;
+    --bs-btn-active-color: #FFF; // #000;
+    --bs-btn-active-bg: #{$accent-3}; // #78aa8f;
+    --bs-btn-active-border-color: #{$accent-3}; // #67a081;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #FFF; // #000;
+    --bs-btn-disabled-bg: #{$gray-2}; // #569573;
+    --bs-btn-disabled-border-color: #{$gray-2}; // #569573;
+}
+
+.link-accent-2 {
+    &:hover , &:focus {
+        color: #{$accent-3} !important;
+    }
+    &:disabled {
+        color: #{$gray-3} !important;
+    }
+}
+
+.first-content {
+    padding-top: 60px;
+    @media (min-width:992px) {
+        padding-top: 125px;
+    }
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.article-link {
+    color: #{$gray-5};
+    text-decoration: none;
+    &:hover {
+      color: #{$accent-2};
+    }
+  }
+
+.img-fluid.h-100 {
+    object-fit: cover;
+}
+
+.img-fluid.w-100 {
+    object-fit: contain;
+}
