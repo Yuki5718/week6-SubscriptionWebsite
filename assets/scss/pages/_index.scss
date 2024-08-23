@@ -39,7 +39,7 @@
       width: 160px;
       height: 104px;
       background-color: #000;
-      background-image: url(../../images/bg-2-sm.png);
+      background-image: url(../../../public/images/bg-2.png);
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 100;   
@@ -47,7 +47,7 @@
         right: -32px;
         width: 300px;
         height: 196px;
-        background-image: url(../../images/bg-2.png);
+        background-image: url(../../../public/images/bg-2.png);
       }
     }
     &::after {
@@ -61,7 +61,7 @@
         width: 217px;
         height: 81px;
         background-color: #fff;
-        background-image: url(../../images/bg-1.png);
+        background-image: url(../../../public/images/bg-2.png);
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 100;
