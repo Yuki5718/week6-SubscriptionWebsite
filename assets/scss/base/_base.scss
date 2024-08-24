@@ -14,7 +14,16 @@ body {
     font-family: "Newsreader" , serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .fs-7 {
+    font-size: 14px;
+}
+
+.fs-8 {
     font-size: 12px;
 }
 
@@ -45,7 +54,7 @@ body {
 }
 
 .first-content {
-    padding-top: 60px;
+    padding-top: 64px;
     @media (min-width:992px) {
         padding-top: 125px;
     }
@@ -56,13 +65,6 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.article-link {
-    color: #{$gray-5};
-    text-decoration: none;
-    &:hover {
-      color: #{$accent-2};
-    }
-  }
 
 .img-fluid.h-100 {
     object-fit: cover;
@@ -70,4 +72,30 @@ body {
 
 .img-fluid.w-100 {
     object-fit: contain;
+}
+
+.full-border-top {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #{$gray-3};
+        top: 0;
+    }
+}
+
+.full-border-bottom {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #{$gray-3};
+        bottom: 0;
+    }
 }

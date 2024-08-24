@@ -113,7 +113,6 @@
   .tab-pane {
     width: 324px;
     background-color: #fff;
-    // border: 1px solid red;
   
     @media (min-width: 1200px) {
       width: 100%;
@@ -143,5 +142,12 @@
           gap: 16px;
         }  
       }
+  }
+}
+
+.article-link {
+  color: #{$gray-5};
+  &:hover {
+    color: #{$accent-2};
   }
 }
